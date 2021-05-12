@@ -1,0 +1,274 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="flex">
+        <div id="left">
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <header id="head">PYTHON DOCUMENTATION</header>
+                    </li>
+                    <li>
+                        <a href="#introduction" class="nav-link">INTRODUCTION</a>
+                    </li>
+                    <li>
+                        <a href="#syntax" class="nav-link">PYTHON SYNTAX</a>
+                    </li>
+                    <li>
+                        <a href="#variables" class="nav-link">PYTHON VARIABLES</a>
+                    </li>
+                    <li>
+                        <a href="#strings" class="nav-link">PYTHON STRINGS</a>
+                    </li>
+                    <li>
+                        <a href="#lists" class="nav-link">PYTHON LISTS</a>
+                    </li>
+                    <li>
+                        <a href="#tuples" class="nav-link">PYTHON TUPLES</a>
+                    </li>
+                    <li>
+                        <a href="#dictionaries" class="nav-link">PYTHON DICTIONARIES</a>
+                    </li>
+                    <li>
+                        <a href="#sets" class="nav-link">PYTHON SETS</a>
+                    </li>
+                    <li>
+                        <a href="#if" class="nav-link">PYTHON IF..ELSE</a>
+                    </li>
+                    <li>
+                        <a href="#while" class="nav-link">PYTHON WHILE</a>
+                    </li>
+                    <li>
+                        <a href="#for" class="nav-link">PYTHON FOR</a>
+                    </li>
+                    <li>
+                        <a href="#cast" class="nav-link">PYTHON CASTING</a>
+                    </li>
+                    <li>
+                        <a href="#lambda" class="nav-link">PYTHON LAMBDA</a>
+                    </li>
+                    <li>
+                        <a href="#func" class="nav-link">PYTHON FUNCTIONS</a>
+                    </li>
+                    <li>
+                        <a href="#tryexcept" class="nav-link">PYTHON TRY..EXCEPT</a>
+                    </li>
+                    <li>
+                        <a href="#refer" class="nav-link">REFRENCES</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div id="right">
+            <main id="main-doc">
+                <section class="main"><img src="images/python.jpg" style="margin-left:200px;height:300px;width:1350px"></section>
+                <section class="main-sec" id="introduction">
+                    <header><b>INTRODUCTION</b></header><br>
+                    <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach
+                        to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.<br>
+                        <ul style="margin:20px;">
+
+                            <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                            <li>Python has a simple syntax similar to the English language.</li>
+                            <li>Python can be used on a server to create web applications.</li>
+                            <li>Python can be used alongside software to create workflows.</li>
+                        </ul>
+                    </p>
+                </section>
+                <section class="main-sec" id="syntax">
+                    <header><b>PYTHON SYNTAX</b></header><br>
+                    <p> Python syntax can be executed by writing directly in the Command Line:</p><br>
+                    <code>print("Hello, World!")</code><br>
+                    <code>Hello, World!</code><br><br>
+                    <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p><br>
+                    <code>C:\Users\Your Name>python myfile.py</code><br><br>
+                    <p> <b>Python Indentation</b>
+                        <ul style="margin:20px;">
+                            <li>Indentation refers to the spaces at the beginning of a code line. </li>
+                            <li>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</li>
+                            <li>Python uses indentation to indicate a block of code.</li>
+                        </ul>
+                    </p>
+                </section>
+                <section class="main-sec" id="variables">
+                    <header><b>PYTHON VARIABLE</b></header><br>
+                    <p>Variables are containers for storing data values.<br>Python has no command for declaring a variable.<br> A variable is created the moment you first assign a value to it.</p><br>
+                    <code>x = 4&nbsp&nbsp # x is of type int</code><br>
+                    <code> x = "Sally" &nbsp&nbsp# x is now of type str</code><br>
+                    <code>  print(x)</code><br>
+                </section>
+                <section class="main-sec" id="strings">
+                    <header><b>PYTHON STRINGS</b></header><br>
+                    <p>Strings in python are surrounded by either single quotation marks, or double quotation marks. <br>'hello' is the same as "hello".<br>You can display a string literal with the print() function:</p><br>
+                    <code>print("Hello")</code><br>
+                    <code>print('Hello')</code><br><br>
+                    <p><b>Assign String to a Variable</b><br>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:</p><br>
+                    <code>a = "Hello"</code><br>
+                    <code>print(a)</code><br><br>
+
+                    <p><b>Multiline Strings</b> <br>You can assign a multiline string to a variable by using three quotes:</p><br>
+                    <code>a = """Hello World,</code><br> <code>Welcome to Python Programming."""</code><br>
+                    <code>print(a)</code><br>
+                </section>
+                <section class="main-sec" id="lists">
+                    <header><b>PYTHON LISTS</b></header>
+                    <p>
+                        <ul style="margin:20px;">
+                            <li>Lists are used to store multiple items in a single variable.</li>
+                            <li>Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.</li>
+                            <li> Lists are created using square brackets:</li><br>
+                        </ul>
+                        <code>thislist = ["apple", "banana", "cherry"]</code><br><code>print(thislist)</code>
+                    </p><br>
+                    <p><b>Access Items</b> <br>List items are indexed and you can access them by referring to the index number:</p><br>
+                    <code>thislist = ["apple", "banana", "cherry"]</code><br> <code>print(thislist[1])</code><br>
+
+                </section>
+                <section class="main-sec" id="tuples">
+                    <header><b>PYTHON TUPLES</b></header>
+                    <p>
+                        <ul style="margin:20px;">
+                            <li>Tuples are used to store multiple items in a single variable. </li>
+                            <li>Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+                            </li>
+                            <li>A tuple is a collection which is ordered and unchangeable.</li>
+                            <li>Tuples are written with round brackets.</li>
+                        </ul>
+                        <code>thistuple = ("apple", "banana", "cherry")</code><br>
+                        <code> print(thistuple) </code></p><br>
+                    <p> <b>Change Tuple Values</b><br>Once a tuple is created, you cannot change its values.<br>Tuples are unchangeable, or immutable as it also is called. But there is a workaround. <br>You can convert the tuple into a list, change the list,
+                        and convert the list back into a tuple.</p><br>
+                    <code>thistuple = ("apple", "banana", "cherry")</code> <br><code>y = list(thistuple)</code><br><code>y.append("orange")</code><br><code>thistuple = tuple(y)</code><br>
+
+                </section>
+                <section class="main-sec" id="dictionaries">
+                    <header><b>PYTHON DICTIONARIES</b></header>
+                    <p>
+                        <ul style="margin:20px;">
+                            <li>Dictionaries are used to store data values in key:value pairs. </li>
+                            <li>A dictionary is a collection which is ordered*, changeable and does not allow duplicates.</li>
+                        </ul>
+                        <code>thisdict = {
+                            "brand": "Ford",
+                            "model": "Mustang",
+                            "year": 1964
+                          }</code><br><code>print(thisdict)</code>
+                    </p><br>
+                    <p><b>Dictionary Items</b><br>Dictionary items are ordered, changeable, and does not allow duplicates<br>Dictionary items are presented in key:value pairs, and can be referred to by using the key name.<br><br>
+                        <code>thisdict = {
+                        "brand": "Ford",
+                        "model": "Mustang",
+                        "year": 1964
+                      }</code><br><code>print(thisdict["brand"])</code>
+                    </p>
+                </section>
+                <section class="main-sec" id="sets">
+                    <header><b>PYTHON SETS</b></header>
+                    <p>
+                        <ul style="margin:20px;">
+                            <li>Sets are used to store multiple items in a single variable. </li>
+                            <li>Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage. </li>
+                            <li>A set is a collection which is both unordered and unindexed.</li>
+                            <li>Sets are written with curly brackets.</li>
+                        </ul>
+                        <code>thisset = {"apple", "banana", "cherry"}</code><br><code>print(thisset)</code>
+                    </p><br>
+                    <p><b>Set Items</b><br>Set items are unordered, unchangeable, and do not allow duplicate values.<br><b>Unordered</b><br> Unordered means that the items in a set do not have a defined order.<br>Set items can appear in a different order
+                        every time you use them, and cannot be referred to by index or key.<br><b>Unchangeable</b><br>Sets are unchangeable, meaning that we cannot change the items after the set has been created.</p>
+                </section>
+                <section class="main-sec" id="if">
+                    <header><b>PYTHON IF..ELSE</b></header><br>
+                    <p>Python supports the usual logical conditions from mathematics:<br>Equals:
+                        <code>a==b</code><br> Not Equals: <code>a !=b</code> <br>Less than: <code>a
+                            < b</code><br>Less than or equal to:<code>a
+                                <=b </code><br>Greater than:<code>a> b</code><br> Greater than or equal to:
+                        <code>a>= b </code><br>These conditions can be used in several ways, most commonly in "if statements" and loops.<br>An "if statement" is written by using the if keyword.</p><br>
+                    <code>a = 33</code><br><code>b = 200</code><br><code>if b > a:</code><br><code>print("b is greater than a")</code>
+                </section>
+                <section class="main-sec" id="while">
+                    <header><b>PYTHON WHILE</b></header><br>
+                    <p>With the while loop we can execute a set of statements as long as a condition is true.</p><br>
+                    <code>i = 1</code><br><code> while i < 6:</code><br>
+                    <code>print(i) </code><br><code>i +=1 </code>
+                </section>
+                <section class="main-sec" id="for">
+                    <header><b>PYTHON FOR</b></header>
+                    <p>
+                        <ul style="margin:20px;">
+                            <li>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</li>
+                            <li>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. </li>
+                            <li>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</li>
+                        </ul>
+                        <code>fruits = ["apple", "banana", "cherry"]</code><br><code> for x in fruits:</code><br><code>print(x)</code>
+                    </p>
+                </section>
+                <section class="main-sec" id="cast">
+                    <header><b>PYTHON CASTING</b></header><br>
+                    <p>Casting in python is therefore done using constructor functions:<br>
+                        <ul style="margin:20px;">
+                            <li>int() - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number)</li>
+                            <li>float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)</li>
+                            <li>str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals</li><br>
+                            <code>x = int(1)</code><br><code> y = int(2.8) </code><br><code>z = int("3") </code>
+                        </ul>
+                    </p>
+                </section>
+                </section>
+                <section class="main-sec" id="lambda">
+                    <header><b>PYTHON LAMBDA</b></header><br>
+                    <p>A lambda function is a small anonymous function.<br>A lambda function can take any number of arguments, but can only have one expression.</p><br>
+                    <code>lambda arguments : expression</code><br>
+                    <code>x = lambda a : a + 10</code><br>
+                    <code>print(x(5))</code>
+                </section>
+                <section class="main-sec" id="func">
+                    <header><b>PYTHON FUNCTIONS</b></header><br>
+                    <p>A function is a block of code which only runs when it is called.
+                        <br> You can pass data, known as parameters, into a function.<br>A function can return data as a result.</p><br>
+                    <code>def my_function(food):</code><br><code> for x in food:</code><br><code>print(x)</code><br><code>fruits = ["apple", "banana", "cherry"]</code><br><code>my_function(fruits)</code>
+
+                </section>
+                <section class="main-sec" id="tryexcept">
+                    <header><b>PYTHON TRY..EXCEPT</b></header><br>
+                    <p>The try block lets you test a block of code for errors. <br>The except block lets you handle the error. <br>The finally block lets you execute code, regardless of the result of the try- and except blocks.</p><br>
+                    <code>try:</code><br><code> print(x)</code><br><code>except:</code><br><code>print("Something went wrong")</code><br><code>finally:</code><br><code>print("The 'try except' is finished")</code>
+                </section>
+                <section class="main-sec" id="refer">
+                    <header><b>REFRENCES</b></header><br>
+                    <p>Documentation in this page is taken from : <br>
+                        <ul style="margin:20px;">
+                            <li>
+                                <a href="https://docs.python.org/3/tutorial/">PYTHON</a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/python/default.asp">W3SCHOOLS</a>
+                            </li>
+                        </ul>
+                    </p>
+
+                </section>
+                <section class="main-sec" id="footer">
+
+                    <p>Made by Deepthi Sherly || Contact :
+                        <a href="https://github.com/deepssherly " target="_blank "><i class="fa fa-github fa-lg "></i></a>
+                        <a href="https://www.linkedin.com/in/deepthi-sherly-j/ " target="_blank "><i class="fa fa-linkedin fa-lg "></i></a>
+                    </p>
+
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
